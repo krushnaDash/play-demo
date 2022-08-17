@@ -12,6 +12,8 @@ GET     /get/:id                     controllers.ToDoListController.getById(id: 
 POST    /todo                              controllers.ToDoListController.addNewItem()
 PUT     /todo/done/:id         controllers.ToDoListController.markAsDone(id: Long)
 GET     /getAllAsync                            controllers.ToDoListController.getAllByAsync()
+GET     /chat                  controllers.WebSocketController.socket()
+GET     /chat-stream           controllers.WebSocketController.akkaStreamsSocket()
 
 
 # Map static resources from the /public folder to the /assets URL path
